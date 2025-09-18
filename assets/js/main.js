@@ -173,6 +173,55 @@
   });
 
   /**
+   * Custom Portfolio Filter (Enhanced)
+   */
+  document.addEventListener('DOMContentLoaded', function() {
+    const portfolioFilters = document.querySelector('#portfolio-filters');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    if (portfolioFilters && portfolioItems.length > 0) {
+      portfolioFilters.addEventListener('click', function(e) {
+        if (e.target.classList.contains('nav-link')) {
+          e.preventDefault();
+          
+          // Remove active class from all buttons
+          portfolioFilters.querySelectorAll('.nav-link').forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          e.target.classList.add('active');
+          
+          // Get filter value
+          const filterValue = e.target.getAttribute('data-filter');
+          
+          // Filter portfolio items
+          portfolioItems.forEach(item => {
+            if (filterValue === '*' || item.classList.contains(filterValue.substring(1))) {
+              item.style.display = 'block';
+              item.classList.remove('hidden');
+              setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'scale(1)';
+              }, 10);
+            } else {
+              item.style.opacity = '0';
+              item.style.transform = 'scale(0.8)';
+              setTimeout(() => {
+                item.style.display = 'none';
+                item.classList.add('hidden');
+              }, 300);
+            }
+          });
+          
+          // Re-trigger AOS animations if available
+          if (typeof AOS !== 'undefined') {
+            AOS.refresh();
+          }
+        }
+      });
+    }
+  });
+
+  /**
    * Init swiper sliders
    */
   function initSwiper() {
