@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Khurram - Professional CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            font-size: 14px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #fff;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #2c5aa0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            font-size: 16px;
+            color: #2c5aa0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .experience-item,
+        .education-item,
+        .project-item {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .item-company {
+            font-weight: bold;
+            color: #2c5aa0;
+            font-size: 14px;
+        }
+
+        .item-date {
+            color: #666;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        .item-description {
+            margin-top: 8px;
+            text-align: justify;
+        }
+
+        .achievements {
+            list-style-type: none;
+            margin-top: 8px;
+        }
+
+        .achievements li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 3px;
+        }
+
+        .achievements li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #2c5aa0;
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2c5aa0;
+        }
+
+        .skill-category h4 {
+            color: #2c5aa0;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .skill-list {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2c5aa0;
+            text-align: justify;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .project-item {
+            border: 1px solid #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .tech-stack {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .project-features {
+            margin-top: 8px;
+        }
+
+        .feature-tag {
+            background: #fff3e0;
+            color: #f57f17;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 10px;
+            margin-right: 5px;
+            margin-bottom: 3px;
+            display: inline-block;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .cv-container {
+                padding: 20px;
+                max-width: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .experience-item,
+            .education-item,
+            .project-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>SAAD KHURRAM</h1>
+            <h2>Software Engineer & Full Stack Developer</h2>
+            <div class="contact-info">
+                <div class="contact-item">📧 SaadKhurram1@outlook.com</div>
+                <div class="contact-item">📱 +92 315 249 1621</div>
+                <div class="contact-item">📍 Karachi, Pakistan</div>
+                <div class="contact-item">💼 LinkedIn: linkedin.com/in/saadkhurram</div>
+                <div class="contact-item">🔗 GitHub: github.com/M-SaadKhurram</div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <h3>Professional Summary</h3>
+            <div class="summary">
+                Passionate Software Engineer with expertise in full-stack development, specializing in PHP, Laravel,
+                React JS, JavaScript, and modern web technologies. Experienced in building scalable web applications,
+                banking systems, e-commerce platforms, and enterprise solutions. Strong background in both frontend and
+                backend development with hands-on experience in cloud technologies and database management.
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <h3>Professional Experience</h3>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Junior Web Developer</div>
+                        <div class="item-company">UHF Solutions</div>
+                    </div>
+                    <div class="item-date">January 2025 - Present</div>
+                </div>
+                <div class="item-description">
+                    Promoted to Junior Web Developer, focusing on development and customization of CRM and CMS modules
+                    serving premier banks in Pakistan.
+                </div>
+                <ul class="achievements">
+                    <li>Collaborated with business analysts, project managers, and end-users to gather requirements and
+                        translate them into actionable features</li>
+                    <li>Coordinated with system administrators and IT infrastructure teams for system integration and
+                        performance optimization</li>
+                    <li>Developed secure banking modules with emphasis on transaction processing and compliance</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Intern Web Developer</div>
+                        <div class="item-company">UHF Solutions</div>
+                    </div>
+                    <div class="item-date">November 2024 - December 2024</div>
+                </div>
+                <div class="item-description">
+                    Joined UHF Solutions as an Intern Web Developer, contributing to web development projects and
+                    supporting the team in delivering client-focused solutions.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Intern Web Developer</div>
+                        <div class="item-company">ATNR</div>
+                    </div>
+                    <div class="item-date">January 2024 - October 2024</div>
+                </div>
+                <div class="item-description">
+                    Worked on maintaining and creating e-commerce websites using Shopify and WordPress to enhance user
+                    experience and streamline online store functionalities.
+                </div>
+                <ul class="achievements">
+                    <li>Implemented payment gateways and product management features</li>
+                    <li>Customized themes to meet client needs</li>
+                    <li>Collaborated with team to deliver optimized solutions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h3>Education</h3>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Bachelor's in Computer Science</div>
+                        <div class="item-company">IQRA University</div>
+                    </div>
+                    <div class="item-date">2025 - Present</div>
+                </div>
+                <div class="item-description">
+                    Currently pursuing Bachelor's degree in Computer Science, deepening understanding of core software
+                    engineering concepts, algorithms, data structures, databases, and web & mobile development.
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Higher Diploma in Software Engineering</div>
+                        <div class="item-company">APTECH TARIQ ROAD</div>
+                    </div>
+                    <div class="item-date">2022 - Present</div>
+                </div>
+                <div class="item-description">
+                    Comprehensive diploma program covering software development, web design, mobile apps, and system
+                    analysis. Developed strong proficiency in PHP, JavaScript, .NET, and databases through real-world
+                    projects.
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Intermediate (Computer Science)</div>
+                        <div class="item-company">Government Islamia Science College</div>
+                    </div>
+                    <div class="item-date">2022 - 2024</div>
+                </div>
+                <div class="item-description">
+                    Completed intermediate education with focus on Mathematics, Physics, and Computer Science, providing
+                    analytical mindset and logical thinking foundation.
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Backend Development</h4>
+                    <div class="skill-list">PHP, Laravel, Node.js, Express.js, .NET, C#, C++, Python</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Frontend Development</h4>
+                    <div class="skill-list">React JS, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Ajax, jQuery</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Databases</h4>
+                    <div class="skill-list">MySQL, MongoDB, PostgreSQL, SQL Server</div>
+                </div>
+                <div class="skill-category">
+                    <h4>CMS & E-Commerce</h4>
+                    <div class="skill-list">WordPress, Shopify, WooCommerce</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Mobile Development</h4>
+                    <div class="skill-list">Dart, Flutter, React Native</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Version Control & DevOps</h4>
+                    <div class="skill-list">Git, SVN, Docker, AWS, Cloud Services</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Projects -->
+        <div class="section">
+            <h3>Professional Projects</h3>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Meezan ADC System</div>
+                        <div class="tech-stack">PHP</div>
+                    </div>
+                    <div class="item-date">Banking System</div>
+                </div>
+                <div class="item-description">
+                    Enhanced Meezan Bank's digital channels by implementing secure transaction processing and complaint
+                    management features. Focused on improving customer experience and operational efficiency.
+                </div>
+                <div class="project-features">
+                    <span class="feature-tag">Secure Transactions</span>
+                    <span class="feature-tag">Complaint Management</span>
+                    <span class="feature-tag">Digital Banking</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Finance Management System</div>
+                        <div class="tech-stack">React + Laravel</div>
+                    </div>
+                    <div class="item-date">Software House</div>
+                </div>
+                <div class="item-description">
+                    Comprehensive finance and payroll system handling project-wise ledgers, payroll processing, bonuses,
+                    reimbursements, loans, and deductions.
+                </div>
+                <div class="project-features">
+                    <span class="feature-tag">Payroll Processing</span>
+                    <span class="feature-tag">Project Ledgers</span>
+                    <span class="feature-tag">Loan Management</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Faster Pakistan E-commerce</div>
+                        <div class="tech-stack">Shopify</div>
+                    </div>
+                    <div class="item-date">E-Commerce Platform</div>
+                </div>
+                <div class="item-description">
+                    Developed e-commerce platform for mobile accessories and watches with enhanced user experience and
+                    streamlined product management.
+                </div>
+                <div class="project-features">
+                    <span class="feature-tag">Mobile Accessories</span>
+                    <span class="feature-tag">Product Management</span>
+                    <span class="feature-tag">Mobile Optimized</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Travel Agency Accounts System</div>
+                        <div class="tech-stack">React</div>
+                    </div>
+                    <div class="item-date">Accounts Management</div>
+                </div>
+                <div class="item-description">
+                    Built intuitive front-end interface for managing hotel vouchers, invoices, and ledgers for travel
+                    operations.
+                </div>
+                <div class="project-features">
+                    <span class="feature-tag">Hotel Vouchers</span>
+                    <span class="feature-tag">Invoice Management</span>
+                    <span class="feature-tag">Financial Ledgers</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Projects -->
+        <div class="section">
+            <h3>Personal Projects</h3>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Courier Management System</div>
+                        <div class="tech-stack">PHP + Laravel</div>
+                    </div>
+                    <div class="item-date">Logistics Management</div>
+                </div>
+                <div class="item-description">
+                    Complete courier management system with admin panel and user interface for shipment tracking and
+                    delivery management.
+                </div>
+                <div class="project-features">
+                    <span class="feature-tag">Shipment Tracking</span>
+                    <span class="feature-tag">Admin Panel</span>
+                    <span class="feature-tag">Delivery Management</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Expo Management System</div>
+                        <div class="tech-stack">MERN Stack</div>
+                    </div>
+                    <div class="item-date">Event Management</div>
+                </div>
+                <div class="item-description">
+                    Full-stack event management platform built with React, Express.js, and MongoDB featuring
+                    comprehensive event planning and real-time analytics.
+                </div>
+                <div class="project-features">
+                    <span class="feature-tag">Event Planning</span>
+                    <span class="feature-tag">Attendee Management</span>
+                    <span class="feature-tag">Real-time Analytics</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Learning Management System</div>
+                        <div class="tech-stack">WordPress</div>
+                    </div>
+                    <div class="item-date">Education Platform</div>
+                </div>
+                <div class="item-description">
+                    Custom LMS with course management, user tracking, and interactive quiz system optimized for
+                    educational institutions.
+                </div>
+                <div class="project-features">
+                    <span class="feature-tag">Course Management</span>
+                    <span class="feature-tag">User Tracking</span>
+                    <span class="feature-tag">Quiz System</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements & Certifications -->
+        <div class="section">
+            <h3>Achievements & Statistics</h3>
+            <div class="summary">
+                <strong>Professional Milestones:</strong><br>
+                • 20+ Projects Completed Successfully<br>
+                • 1+ Years of Professional Experience<br>
+                • 10+ Happy Clients and Satisfied Employers<br>
+                • Expertise in Multiple Programming Languages and Frameworks<br>
+                • Strong Problem-Solving and Analytical Skills<br>
+                • Excellent Team Collaboration and Communication
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div
+            style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 12px;">
+            <p>This CV was generated on
+                <?php echo date('F j, Y'); ?>. For the most up-to-date version, please visit my portfolio website.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
